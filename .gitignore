@@ -1,0 +1,14 @@
+# Ignore environment files
+.env
+
+# Ignore volumes directory
+volumes/
+
+# Ignore node_modules if present
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore OS generated files
+.DS_Store

@@ -1,8 +1,9 @@
 # Ignore environment files
 .env
+.env.backup
 
-# Ignore volumes directory
-volumes/
+# Ignore only Postgres data directory
+volumes/db/data/
 
 # Ignore node_modules if present
 node_modules/

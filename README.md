@@ -50,7 +50,15 @@ This repository contains the necessary Docker Compose files and configurations t
         ```
 
 4.  **Access Supabase Studio:**
-    Once the services are running, you can access the Supabase Studio at `http://localhost:3000`.
+    Once the services are running, you can access Supabase Studio at `http://localhost:8000` (via the API gateway).
+    
+    **Default credentials:**
+    - Username: `supabase`
+    - Password: `this_password_is_insecure_and_should_be_updated`
+    
+    > **Important:** Change these credentials in your `.env` file before using in production. If accessing Studio or APIs outside of `localhost`, set `SUPABASE_PUBLIC_URL` in your `.env` file to your public IP or domain (e.g., `https://yourdomain.com`). This ensures correct URLs and enables external access.
+    >
+    > Also, review and configure CORS settings to allow requests from your frontend domain(s).
 
 ## Project Structure
 
